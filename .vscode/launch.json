@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+     {
+       "name": ".NET Console Launch",
+       "type": "coreclr",
+       "request": "launch",
+       "preLaunchTask": "build",
+       "program": "${workspaceFolder}/MiSolucion/MiProyectoConsola/bin/Debug/net8.0/MiProyectoConsola.dll",
+       "args": [],
+       "cwd": "${workspaceFolder}/MiSolucion/MiProyectoConsola",
+       "stopAtEntry": false,
+       "console": "integratedTerminal"
+     },
+     {
+       "name": ".NET Web API Launch",
+       "type": "coreclr",
+       "request": "launch",
+       "preLaunchTask": "build",
+       "program": "${workspaceFolder}/MiSolucion/MiProyectoWeb/bin/Debug/net8.0/MiProyectoWeb.dll",
+       "args": [],
+       "cwd": "${workspaceFolder/MiSolucion}/MiProyectoWeb",
+       "stopAtEntry": false,
+       "launchBrowser": {
+         "enabled": true,
+         "args": "http://localhost:5000",
+         "windows": {
+           "command": "cmd.exe",
+           "args": "/C start ${auto}"
+         },
+         "linux": {
+           "command": "xdg-open"
+         },
+         "osx": {
+           "command": "open"
+         }
+       },
+       "env": {
+         "ASPNETCORE_ENVIRONMENT": "Development"
+       },
+       "sourceFileMap": {
+         "/Views": "${workspaceFolder}/Views"
+       }
+     }
+    ]
+    }
+    
