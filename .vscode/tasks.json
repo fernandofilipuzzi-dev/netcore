@@ -7,7 +7,7 @@
         "type": "process",
         "args": [
           "build",
-          "${workspaceFolder}/MiSolucion.sln"
+          "${workspaceFolder}/MiSolucion/MiSolucion.sln"
         ],
         "problemMatcher": "$msCompile"
       }
